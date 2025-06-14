@@ -14,7 +14,9 @@ import cloudinaryConnect from './config/cloudinary.js';
 const app = express();
 app.use(cors());
 
+const Port=process.env.Port || 4000;
 const server = http.createServer(app); 
+
 
 const io = new Server(server, {
   cors: {
@@ -36,8 +38,7 @@ app.use("/chats",chatRoutes)
 
 handleSocket(io);
 
-server.listen(4000, () => {
-  console.log('Server started on port 4000');
+server.listen(Port, () => {
 });
 
 dbconnect();
