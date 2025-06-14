@@ -12,7 +12,11 @@ import cloudinaryConnect from './config/cloudinary.js';
 
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://chat-app-hazel-iota.vercel.app',
+  credentials: true
+}));
+
 
 const Port=process.env.Port || 4000;
 const server = http.createServer(app); 
@@ -20,7 +24,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:3000', // Vite client URL
+    origin: 'https://chat-app-hazel-iota.vercel.app', // Vite client URL
     methods: ['GET', 'POST'],
    
   },
