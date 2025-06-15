@@ -25,7 +25,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: 'https://chat-app-seven-iota-34.vercel.app/', // Vite client URL
+    origin: 'https://chat-app-seven-iota-34.vercel.app', // Vite client URL
     methods: ['GET', 'POST'],
    
   },
