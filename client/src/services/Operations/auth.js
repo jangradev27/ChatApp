@@ -94,19 +94,3 @@ export const Logout=(navigate)=>{
   }
 }
 
-export const isTokenValid=(token,navigate)=>{
-return async(dispatch)=>{
-    try{
-        const response=await apiConnector("POST",AuthApi.TokenValid_api,null,{
-            Authorization:`Bearer ${token}`
-        })
-        if(!response.data.success){
-            dispatch(Logout(navigate));
-            toast.error("Token Expired Please login again")
-        }
-    }
-    catch(err){
-        toast.error(err.response.data.message || err.message);
-    }
-}
-}

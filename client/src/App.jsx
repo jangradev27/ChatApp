@@ -11,18 +11,10 @@ import ChatPage from './component/Chat';
 import OpenRoute from './component/openRoute';
 import PrivateRoute from './component/privateRoute';
 import Homepage from './pages/Home';
-import { useDispatch, useSelector } from 'react-redux';
-import { isTokenValid } from './services/Operations/auth';
 
 
 function App() {
-  const dispatch=useDispatch();
-  const navigate=useNavigate();
-  console.log(import.meta.env.VITE_API_URL)
-  const {token}=useSelector(state=>state.Auth);
-  if(token){
-    dispatch(isTokenValid(token,navigate));
-  }
+
 
   return (
     <div className=" flex flex-col p-2 min-w-full bg-gradient-to-br from-blue-50 via-white to-purple-50  ">
