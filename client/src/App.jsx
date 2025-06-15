@@ -15,7 +15,7 @@ import Homepage from './pages/Home';
 
 
 function App() {
-  
+  console.log(import.meta.env.VITE_API_URL)
 
   return (
     <div className=" flex flex-col p-2 min-w-full bg-gradient-to-br from-blue-50 via-white to-purple-50  ">
