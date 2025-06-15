@@ -27,7 +27,6 @@ export const getRoomDetails=(user2,token,navigate)=>{
 
 
         catch(err){
-            console.log(err);
             toast.error(err.response.data.message);
         }
         toast.dismiss(toastId);

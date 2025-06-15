@@ -13,12 +13,11 @@ export const Islogin=async(req,res,next)=>{
         }
         // verify the token
         try{
-            const decode= jwt.verify(token,process.env.JWT_Secret);
+            const decode= jwt.verify(token,process.env.jwt_Secret);
             req.user=decode; 
             
         }
         catch(err){
-            console.log(err);
            return res.status(401).json({ 
               success:false,
               message:"Token is invalid"  
