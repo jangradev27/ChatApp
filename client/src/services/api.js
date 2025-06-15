@@ -5,7 +5,8 @@ export const AuthApi={
     SignUp_api:`${baseURL}/auth/SignUp`,
     SendOtp_api:`${baseURL}/auth/SendOtp`,
     getAllUser_api:`${baseURL}/auth/getUsers`,
-    getUser_api:`${baseURL}/auth/getUser`
+    getUser_api:`${baseURL}/auth/getUser`,
+    TokenValid_api:`${baseURL}/auth/isAuth`
 }
 
 export const RoomApi={
