@@ -32,7 +32,12 @@ const OtpSection = () => {
     dispatch(SendOtp(formdata,navigate));
   }
 
- 
+  useEffect(()=>{
+    if(!formdata){
+      navigate("/SignUp");
+    }
+    
+  },[])
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
