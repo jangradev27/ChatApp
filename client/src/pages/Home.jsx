@@ -101,9 +101,7 @@ const Homepage = () => {
                 <Shield className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Private & Secure</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Your conversations belong to you. With end-to-end encryption, your messages stay private and secure, always.
-              </p>
+              
             </div>
 
             <div className="text-center group">
@@ -120,31 +118,7 @@ const Homepage = () => {
       </section>
 
       {/* Simple Stats */}
-      <section className="py-20 bg-gradient-to-r from-blue-600/10 to-purple-600/10">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Trusted Worldwide</h2>
-          </div>
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-gray-900 mb-2">10M+</div>
-              <div className="text-gray-600">Happy Users</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-gray-900 mb-2">50K+</div>
-              <div className="text-gray-600">Active Teams</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-gray-900 mb-2">99.9%</div>
-              <div className="text-gray-600">Uptime</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-gray-900 mb-2">150+</div>
-              <div className="text-gray-600">Countries</div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Footer */}
       <footer className="py-16 bg-white">
