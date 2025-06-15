@@ -18,7 +18,7 @@ export const Islogin=async(req,res,next)=>{
             
         }
         catch(err){
-            res.status(401).json({ 
+           return res.status(401).json({ 
               success:false,
               message:"Token is invalid"  
             })
